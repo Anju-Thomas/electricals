@@ -1,0 +1,24 @@
+img-hover-zoom--point-zoom img {
+    transform-origin: 65% 75%;
+    transition: transform 1s, filter .5s ease-out;
+  }
+  
+  /* The Transformation */
+  .img-hover-zoom--point-zoom:hover img {
+    transform: scale(5);
+  }
+  * {box-sizing: border-box;}
+
+.img-magnifier-container {
+  position:relative;
+}
+
+::ng-deep .img-magnifier-glass {
+  position: absolute;
+  border: 3px solid white;
+  
+  cursor: none;
+  /*Set the size of the magnifier glass:*/
+  width: 100px;
+  height: 100px;
+}

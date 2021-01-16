@@ -1,0 +1,107 @@
+<mat-grid-list cols="6" rowHeight=400px>
+    <mat-grid-tile [colspan]="2" [rowspan]="1">
+        <mat-accordion>
+            <mat-expansion-panel hideToggle>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        Price Range
+                    </mat-panel-title>
+                    <mat-panel-description>
+                        Clear All
+                    </mat-panel-description>
+                </mat-expansion-panel-header>
+                <ng-template matExpansionPanelContent>
+                    <mat-label>Min:Rs.105</mat-label>
+                    <mat-label style="margin-left:120px">Max:Rs.1410</mat-label>
+                    <ngx-slider [(value)]="value" [(highValue)]="highValue" [options]="options"></ngx-slider>
+
+                </ng-template>
+
+
+            </mat-expansion-panel>
+            <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        Product Category
+                    </mat-panel-title>
+                    <mat-panel-description>
+
+                    </mat-panel-description>
+                </mat-expansion-panel-header>
+                <ng-template matExpansionPanelContent>
+
+                    <p><input type="checkbox">Floor Cleaner</p>
+                    <p><input type="checkbox">Hand Sanitizers</p>
+                    <p><input type="checkbox">Liquid Hand-Wash</p>
+                    <p><input type="checkbox">Rapid Descaler</p>
+                    <p><input type="checkbox">Surface Disinfectant</p>
+
+                </ng-template>
+
+            </mat-expansion-panel>
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        Brand
+                    </mat-panel-title>
+                    <mat-panel-description>
+
+                    </mat-panel-description>
+                </mat-expansion-panel-header>
+                <ng-template matExpansionPanelContent>
+                    <p><input type="checkbox">Quartz Home Care</p>
+                </ng-template>
+
+            </mat-expansion-panel>
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        Net Content
+                    </mat-panel-title>
+                    <mat-panel-description>
+
+                    </mat-panel-description>
+                </mat-expansion-panel-header>
+                <ng-template matExpansionPanelContent>
+                    <p><input type="checkbox">10 ltr</p>
+                    <p><input type="checkbox">200 ml</p>
+                    <p><input type="checkbox">5 ltr</p>
+                </ng-template>
+
+            </mat-expansion-panel>
+
+        </mat-accordion>
+    </mat-grid-tile>
+    <mat-grid-tile [colspan]="4" [rowspan]="2">
+        <div style="width:100%">
+            <h1 style="text-align: left;">DISINFECTANTS</h1>
+        
+        <div style="width:100%;margin-top:60px">
+            <table style="width:500px">
+                <tbody>
+                <tr>
+                    <td style="text-align: center;border:1px solid gray"><img src="../../assets/images/hand-sanitizer.jpeg" style="height:200px;width:200px">
+                    <p>Quartz Home Care Alcohol Based 200ml Instant Hand Sanitizer</p><p style="color:rgb(5, 158, 179)"><b>From Rs. 99</b></p></td>
+                    <td style="text-align: center;border:1px solid gray"><img src="../../assets/images/hand-sanitizer.jpeg" style="height:200px;width:200px">
+                        <p>Quartz Home Care Alcohol Based 200ml Instant Hand Sanitizer</p><p style="color:rgb(5, 158, 179)"><b>From Rs. 99</b></p></td>
+                        <td style="text-align: center;border:1px solid gray"><img src="../../assets/images/hand-sanitizer.jpeg" style="height:200px;width:200px">
+                            <p>Quartz Home Care Alcohol Based 200ml Instant Hand Sanitizer</p><p style="color:rgb(5, 158, 179)"><b>From Rs. 99</b></p></td>
+                            <td style="text-align: center;border:1px solid gray"><img src="../../assets/images/hand-sanitizer.jpeg" style="height:200px;width:200px">
+                                <p>Quartz Home Care Alcohol Based 200ml Instant Hand Sanitizer</p><p style="color:rgb(5, 158, 179)"><b>From Rs. 99</b></p></td>
+                </tr> 
+                <tr>
+                    <td style="text-align: center;border:1px solid gray"><img src="../../assets/images/hand-sanitizer.jpeg" style="height:200px;width:200px">
+                    <p>Quartz Home Care Alcohol Based 200ml Instant Hand Sanitizer</p><p style="color:rgb(5, 158, 179)"><b>From Rs. 99</b></p></td>
+                    <td style="text-align: center;border:1px solid gray"><img src="../../assets/images/hand-sanitizer.jpeg" style="height:200px;width:200px">
+                        <p>Quartz Home Care Alcohol Based 200ml Instant Hand Sanitizer</p><p style="color:rgb(5, 158, 179)"><b>From Rs. 99</b></p></td>
+                        <td style="text-align: center;border:1px solid gray"><img src="../../assets/images/hand-sanitizer.jpeg" style="height:200px;width:200px">
+                            <p>Quartz Home Care Alcohol Based 200ml Instant Hand Sanitizer</p><p style="color:rgb(5, 158, 179)"><b>From Rs. 99</b></p></td>
+                            <td style="text-align: center;border:1px solid gray"><img src="../../assets/images/hand-sanitizer.jpeg" style="height:200px;width:200px">
+                                <p>Quartz Home Care Alcohol Based 200ml Instant Hand Sanitizer</p><p style="color:rgb(5, 158, 179)"><b>From Rs. 99</b></p></td>
+                </tr>   
+                </tbody>
+            </table>
+        </div>
+    </div>
+    </mat-grid-tile>
+</mat-grid-list>

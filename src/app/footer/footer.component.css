@@ -1,0 +1,15 @@
+.link{
+    color:white
+}
+.scroll-to-top {
+    position: sticky;
+    bottom: 15px;
+    right: 15px;
+    opacity: 20px;
+    transition: all .2s ease-in-out;
+   
+   }
+   .show-scrollTop {
+    opacity: 2;
+    transition: all .2s ease-in-out;
+   }

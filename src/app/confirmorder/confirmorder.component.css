@@ -1,0 +1,53 @@
+.container {
+    width:100%;
+    margin-top: 100px;
+    }
+    .progressbar {
+    counter-reset: step;
+    }
+    .progressbar li{
+    list-style-type: none;
+    float: left;
+    /* width: 33.33%; */
+    width:320px;
+    position:relative;
+    text-align: center;
+    font-weight: 600;
+    }
+    .progressbar li:before {
+    /* CSS for creating steper block before the li item*/
+    content:'🛒';
+    counter-increment: step;
+    height:40px;
+    width:40px;
+    line-height: 40px;
+    border: 5px solid #ddd;
+    display:block;
+    text-align: center;
+    margin: 0 auto 10px auto;
+    border-radius: 50%;
+    background-color: white;
+    }
+    .progressbar li:after {
+    /* CSS for creating horizontal line*/
+    content:'';
+    position: absolute;
+    width:100%;
+    height:2px;
+    background-color: #ddd;
+    top: 15px;
+    left: -50%;
+    z-index: -1;
+    }
+    .progressbar li:first-child:after {
+    content:none;
+    }
+    .progressbar li.active {
+    color:#27ae60;
+    }
+    .progressbar li.active:before {
+    border-color:#27ae60;
+    }
+    /* .progressbar li.active + li:after{
+    background-color:#27ae60;
+    } */

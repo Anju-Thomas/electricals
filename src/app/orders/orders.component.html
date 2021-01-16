@@ -1,0 +1,141 @@
+<div class="container">
+  <ul class="progressbar">
+    <li></li>
+    <li class="active"></li>
+    <li></li>
+    <li></li>
+  </ul>
+</div>
+<h1 style="text-align: center;">Billing Address</h1>
+
+<mat-grid-list cols="4" rowHeight="800px">
+    <mat-grid-tile [colspan]="3" style="padding-left:450px">
+<mat-accordion class="example-headers-align" multi style="width:400px">
+    <mat-expansion-panel hideToggle>
+      <mat-expansion-panel-header>
+        <mat-panel-title style="padding-left:130px">
+          <button mat-raised-button style="background-color: orange;color:white">ADD NEW</button>
+        </mat-panel-title>
+        
+      </mat-expansion-panel-header>
+  
+      <mat-form-field>
+        <mat-label>First name</mat-label>
+        <input matInput required ([ngmodel])="firstname" name="firstname">
+      </mat-form-field>
+  
+      <mat-form-field>
+        <mat-label>Last Name</mat-label>
+        <input matInput required>
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Email</mat-label>
+        <input matInput required>
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Company (Optional)</mat-label>
+        <input matInput>
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Select Country</mat-label>
+        <input matInput>
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Select State</mat-label>
+        <input matInput>
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>City</mat-label>
+        <input matInput required>
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Address 1</mat-label>
+        <input matInput required>
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Pincode</mat-label>
+        <input matInput required>
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Mobile No</mat-label>
+        <input matInput required>
+      </mat-form-field>
+  
+      <mat-form-field>
+        <mat-label>Phone No</mat-label>
+        <input matInput>
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>GST No</mat-label>
+        <input matInput>
+      </mat-form-field>
+    </mat-expansion-panel>
+    
+  
+    
+  </mat-accordion>
+</mat-grid-tile>
+</mat-grid-list>
+
+<h1 style="text-align: center;"><b>Order Summary</b></h1>
+
+<mat-grid-list cols="2" rowHeight="1000px">
+   <mat-grid-tile>
+        
+  
+    <table id="cart">
+      <thead>
+       
+        <th>Image</th>
+        <th>Product(s)</th>
+        <th>Price</th>
+        <th>Qty</th>
+        <th>Total</th>
+      </thead>
+      <tr *ngFor="let list of cartlist">
+        
+        <td><img src="http://localhost:3000/{{list.productImage}}" style="width:100px;height:100px"></td>
+        <td>{{list.productId.name}}</td>
+        <td>{{list.price}}</td>
+        <td><span id="qty">{{list.quantity}}</span>
+        
+        <td>{{list.total}}</td>
+      </tr>
+    </table>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <div>
+      <div style="margin-top:20px;background-color:rgb(245, 239, 239);height:300px">
+        <table style="width:400px;height:250px;margin-left:30px;margin-right:30px">
+             
+          <tbody>
+              <tr>
+                  <td style="text-align: left;">Sub-Total:</td>
+                  <td style="text-align: right;">Rs.{{subtotal}}</td>
+              </tr>
+              <tr>
+                  <td style="text-align: left;">Shipping:</td>
+                  <td style="text-align: right;">Calculated during checkout</td>
+              </tr>
+              <tr>
+                  <td style="color:rgb(66, 158, 158);font-size:20px;text-align: left;"><b>Total:</b></td>
+                  <td  style="color:rgb(66, 158, 158);font-size:20px;text-align: right;"><b>Calculated during checkout</b></td>
+              </tr>
+               
+          </tbody>
+      </table>
+      
+      </div>
+  
+    </div>
+  </mat-grid-tile>
+  </mat-grid-list>

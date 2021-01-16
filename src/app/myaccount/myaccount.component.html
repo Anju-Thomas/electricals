@@ -1,0 +1,49 @@
+<form #myform="ngForm" class="form-group">
+<div mat-dialog-content style="width: 100%;height:500px;text-align: center;">
+    <div >
+     
+         <p style="text-align: center;">
+          <mat-form-field appearence="email" >
+           
+            <input matInput placeholder="Email:" style="border-bottom: gray;" class="form-control" #em="ngModel" [(ngModel)]="email" name="email">
+           <p style="text-align: right;"> <span class="material-icons">perm_identity</span></p>
+            </mat-form-field><br>
+            <mat-form-field appearence="password" >
+              
+              <input matInput placeholder="Password:" class="form-control" #pass="ngModel" [(ngModel)]="password" name="password">
+             <p style="text-align: right;"><span class="material-icons">https</span></p>
+            </mat-form-field><br>
+            <a href="#" style="color: black;text-align: center;">Forgot Password?</a>
+            </p>
+          <br>
+          <p >
+            <input type="checkbox">Remember me?
+          </p>
+          
+         <section>
+           <div class="example-button-row" >
+              <button mat-button color="warn" style="background-color:orangered;color: white;" (click)=login()>LOG IN</button>
+              </div>
+          </section>
+  <div>
+  
+  </div><br>
+  <p>
+    <span class="material-icons">create</span>
+   <a style="color: grey;" routerLink="/register" (click)=register()> REGISTER</a>
+  </p>
+  
+  <section style="margin-left: 30px;">
+    <div class="example-button-row">
+       <button mat-button  color="warn" style="background-color: rgb(231, 41, 41);color: white;" (click)=navigategoogle()>LOGIN WITH GOOGLE</button>
+       </div>
+  
+   <br>
+   
+    <div class="example-button-row" style="text-align: center;">
+       <button mat-button color="warn" style="background-color:rgb(35, 35, 223);color: white;" (click)=navigatefb()>LOGIN WITH FACEBOOK</button>
+       </div>
+   </section>
+  </div>
+      </div>
+    </form>

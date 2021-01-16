@@ -1,0 +1,203 @@
+<div>
+    <mat-grid-list cols="4" rowHeight="700px">
+        <mat-grid-tile [colspan]="1" [rowspan]="1">
+
+            <div class="img-magnifier-container">
+                <img id="myimage" src="http://localhost:3000/{{IMG}}" width="400" height="400">
+              </div>
+           
+                
+        </mat-grid-tile>
+
+        <mat-grid-tile [colspan]="2" [rowspan]="1" style="text-align:justify">
+
+            <div>
+                <h1 style="text-align:center;">Wipro Garnet 6W Wall Light (with USB)</h1>
+
+                <div style="color:gray">
+                    <mat-icon style="font-size:20px;">grade</mat-icon>
+                    <mat-icon style="font-size:20px">grade</mat-icon>
+                    <mat-icon style="font-size:20px">grade</mat-icon>
+                    <mat-icon style="font-size:20px">grade</mat-icon>
+                    <mat-icon style="font-size:20px">grade</mat-icon>
+                </div>
+
+                <div><a href="">Be the first one to review this product</a></div>
+                <div width="400px;">
+                    <table style="margin-top:30px">
+                        <thead>
+                            <th>Features</th>
+                            <th>Best of Electricals Assurance</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <ul>
+                                        <li>Brand: Wipro</li>
+                                        <li style="margin-top:10px">Product Category: Wall Lights</li>
+                                        <li style="margin-top:10px">Model Name: DW10627</li>
+                                        <li style="margin-top:10px">Colour: Yellow</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <ul style="list-style:none">
+                                        <li>
+                                            <mat-icon>thumb_up</mat-icon>&emsp;&emsp;&emsp;Brand New
+                                        </li>
+                                        <li>
+                                            <mat-icon>credit_card</mat-icon>&emsp;&emsp;&emsp;Secure Payment
+                                        </li>
+                                        <li>
+                                            <mat-icon>done</mat-icon>&emsp;&emsp;&emsp;100% Genuine Products
+                                        </li>
+                                        <li>
+                                            <mat-icon>security</mat-icon>&emsp;&emsp;&emsp;Manufacturer Warranty
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+
+
+
+                        </tbody>
+                    </table>
+                </div>
+                <div>
+                    <p>Check serviceability at your Pincode:</p>
+                    <p><input type="text" style="width:200px;height:30px" placeholder="Enter pincode">
+                        <button mat-button style="background-color:gray">Check</button></p>
+                </div>
+
+            </div>
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="1" [rowspan]="1">
+            <div>
+                <p>List Price: Rs. 5090</p>
+                <p style="color:rgb(65, 121, 185)"><b>Selling Price:</b> Rs. 4799</p>
+                <p>You Save: <span style="color:red">Rs. 291.00 (5.72%)</span></p>
+                <p style="color:rgb(65, 121, 185)">(Price Inclusive of GST)</p>
+                <p>
+                    <mat-icon style="color:red">view_quilt</mat-icon>EMI Start From &#8377; 159/month <span
+                        style="color:red"><button mat-button>View Plans</button></span>
+                </p>
+                <p><b>PRICE BREAKS - The more you buy, the more you save</b></p>
+                <table style="border:1px solid black;text-align:center">
+                    <thead>
+                        <th style="width:100px">Quantity</th>
+                        <th style="width:100px">Price</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>5+</td>
+                            <td>Rs. 4780</td>
+                        </tr>
+                        <tr>
+                            <td>10+</td>
+                            <td>Rs. 4770</td>
+                        </tr>
+                        <tr>
+                            <td>15+</td>
+                            <td>Rs. 4760</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+                <div style="margin-top:30px">
+                    <button mat-button style="width:10px;background-color:gray" (click)="dec()">-</button>
+                    <span><button style="width:50px;height:30px;text-align:center" placeholder="1" id="qty">0</button></span>
+                    <span><button mat-button style="width:10px;background-color:gray" (click)="inc()">+</button></span>
+
+                </div>
+
+                <div style="margin-top:30px">
+                    <p><button mat-button style="background-color:rgb(62, 167, 228);width:300px" (click)="cart()">ADD TO CART</button>
+                    </p>
+                    <p><button mat-button style="background-color:rgb(243, 140, 43);width:300px">BUY NOW</button></p>
+                </div>
+
+
+
+            </div>
+        </mat-grid-tile>
+    </mat-grid-list>
+</div>
+
+<mat-grid-list cols="6" rowHeight="200px">
+    <mat-grid-tile [colspan]="3" [rowspan]="1">
+        <button mat-button>
+            <angular-image-slider [autoRotate]="true" [autoRotateAfter]="5000" [autoRotateRight]="true"
+                [images]="imagesUrl" style="width:500px;">
+            </angular-image-slider>
+        </button>
+    </mat-grid-tile>
+</mat-grid-list>
+
+<mat-grid-list cols="1" rowHeight="400px" style="margin-top:50px">
+
+    <div style="text-align: left;margin-left:100px">
+        <p><b>PRODUCT FEATURES</b></p>
+        <ul>
+            <li>Inbuilt 5V USB</li>
+            <li style="margin-top:10px">Adjustable LED</li>
+            <li style="margin-top:10px">3W Focus light for reading</li>
+            <li style="margin-top:10px">6W Indirect light for leisure</li>
+            <li style="margin-top:10px">Dimmable design to adjust light as per need</li>
+            <li style="margin-top:10px">CREE LED Chip for long life</li>
+        </ul>
+    </div>
+
+    <div style="text-align: left;margin-left:100px">
+        <p><b>DIMENSIONS</b></p>
+        <ul>
+            <li><b>Length</b>:140mm</li>
+            <li style="margin-top:10px"><b>Width</b>:150mm</li>
+        </ul>
+    </div>
+
+</mat-grid-list>
+<mat-grid-list cols="1" rowHeight="400px">
+    <div style="margin-left:100px;">
+        <h3 style="margin-left:300px;"><b>PRODUCT SPECIFICATION</b></h3>
+        <table style="border:1px solid rgb(196, 185, 185);width:800px;height:300px">
+
+            <tbody>
+                <tr>
+                    <td style="color:gray"><b>Brand</b></td>
+                    <td>Wipro</td>
+                </tr>
+                <tr>
+                    <td style="color:gray"><b>Product Category</b></td>
+                    <td>Wall Lights</td>
+                </tr>
+                <tr>
+                    <td style="color:gray"><b>Model Name</b></td>
+                    <td>DW10627</td>
+                </tr>
+                <tr>
+                    <td style="color:gray"><b>Colour</b></td>
+                    <td>Yellow</td>
+                </tr>
+                <tr>
+                    <td style="color:gray"><b>Power</b></td>
+                    <td>6W</td>
+                </tr>
+                <tr>
+                    <td style="color:gray"><b>Light Source</b></td>
+                    <td>LED</td>
+                </tr>
+                <tr>
+                    <td style="color:gray"><b>Energy Saving</b></td>
+                    <td>Yes</td>
+                </tr>
+                <tr>
+                    <td style="color:gray"><b>Package Contents</b></td>
+                    <td>1 Wall light</td>
+                </tr>
+                <tr>
+                    <td style="color:gray"><b>Warranty</b></td>
+                    <td>1 Years (on manufacturing defect)</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</mat-grid-list>

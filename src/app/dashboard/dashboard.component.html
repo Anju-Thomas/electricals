@@ -1,0 +1,1418 @@
+<mat-grid-list cols="1" rowheight="150px">
+    <div style="width:90%;margin-left:70px;margin-top:50px;">
+        <mat-carousel timings="250ms ease-in" [autoplay]="true" interval="5000" color="accent" maxWidth="auto"
+            proportion="25" slides="5" [loop]="true" [hideArrows]="false" [hideIndicators]="false" [useKeyboard]="true"
+            [useMouseWheel]="false" orientation="ltr">
+            <mat-carousel-slide #matCarouselSlide *ngFor="let slide of slides; let i = index" [image]="slide.image"
+                overlayColor="#00000040" [hideOverlay]="false"></mat-carousel-slide>
+        </mat-carousel>
+    </div>
+</mat-grid-list>
+<mat-grid-list cols="4" rowHeight="100px">
+    <div style="width:100%;height:50px">
+        <mat-grid-tile style="color:gray">
+            <mat-icon style="font-size:50px;">check_circle_outline</mat-icon>
+            <span style="margin-top:25px;margin-left:30px">100% GENUINE <br> Products</span>
+        </mat-grid-tile>
+        <mat-grid-tile style="color:gray">
+            <mat-icon style="font-size:50px;">credit_card</mat-icon>
+            <span style="margin-top:25px;margin-left:30px">SECURE <br> Payments</span>
+        </mat-grid-tile>
+        <mat-grid-tile style="color:gray">
+            <mat-icon style="font-size:50px;">thumb_up</mat-icon>
+            <span style="margin-top:25px;margin-left:30px">BRAND NEW <br> Products</span>
+        </mat-grid-tile>
+        <mat-grid-tile style="color:gray">
+            <mat-icon style="font-size:50px;">security</mat-icon>
+            <span style="margin-top:25px;margin-left:30px">MANUFACTURER <br> Warranty</span>
+        </mat-grid-tile>
+
+
+    </div>
+</mat-grid-list>
+<mat-grid-list cols="1" rowHeight="500px" style="text-align: center;">
+    <div style="width:100%;">
+        <button mat-button routerLink="/productlist"><img src="../../assets/images/DISINFACTANTS.jpg"></button>
+    </div>
+</mat-grid-list>
+<mat-grid-list cols="2" rowHeight="150px">
+    <mat-grid-tile>
+        <img src="../../assets/images/GST.jpeg">
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <button matbutton routerLink="/pricelist"><img src="../../assets/images/PRICE-LIST-2020.jpeg"></button>
+    </mat-grid-tile>
+
+</mat-grid-list>
+
+<mat-grid-list cols="1" rowHeight="300px" style="margin-top:30px;text-align:center">
+    <div style="width:100%;margin-left:20px;">
+        <img src="../../assets/images/WINDMILL.jpg">
+    </div>
+</mat-grid-list>
+<div style="width:90%;margin-left:20px;margin-top:100px">
+   
+    <mat-grid-list cols="4" rowHeight="200px">
+        <mat-grid-tile [colspan]="1" [rowspan]="2">
+            <div>
+                <button mat-button style="color:cyan;width:300px;font-size:25px">LED and Lighting</button>
+                <button mat-button style="color:gray;width:300px;font-size:18px">LED Lights</button>
+                <button mat-button style="color:gray;width:300px;font-size:18px">CFLs</button>
+                <button mat-button style="color:gray;width:300px;font-size:18px">Domestic Tube Fittings</button>
+                <button mat-button style="color:gray;width:300px;font-size:18px">Flood Lights</button>
+                <button mat-button style="color:gray;width:300px;font-size:18px">Ballasts & Ingniters</button>
+                <button mat-button style="color:gray;width:300px;font-size:18px">Decorative Lights</button>
+                <button mat-button style="color:gray;width:300px;font-size:18px">Lamps</button>
+                <button mat-button style="color:gray;width:300px;font-size:18px">Desk Lights</button>
+                <button mat-button style="color:gray;width:300px;font-size:18px">View All</button>
+            </div>
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="1" [rowspan]="2">
+            <img src="../../assets/images/led-lighting.jpeg" style="width:100%">
+        </mat-grid-tile>
+
+
+        <mat-grid-tile [colspan]="2" [rowspan]="2">
+            <div>
+            <mat-tab-group style="margin-left:50px;margin-top:30px">
+                <mat-tab label="LATEST">
+            <table style="width:600px">
+                <tbody style="height:300px">
+                    <tr>
+                        <td>
+                            <button mat-button style="height:200px;width:170px" class="zoom" routerLink="/productdisplay">
+                                <img
+                                src="../../assets/images/walllight.jpeg" style="height:200px;width:150px"></button>
+                                 
+                        </td>
+                        <td>
+                            <p>Wipro Garnet 6W<br> Wall
+                                Light (with USB)
+                                <b>
+                                    <p style="color:rgb(33, 151, 151)">
+                                        From Rs. 4760
+                                    </p>
+                                </b>
+                            </p>
+                        </td>
+                        <td>
+                            <button mat-button style="height:200px;width:170px" class="zoom" routerLink="/productdisplay">
+                                <img
+                                src="../../assets/images/led strip.jpeg" style="height:200px;width:150px"></button>
+                                 
+                        </td>
+                        <td>
+                            <p>Wipro Garnet 6W<br> Wall
+                                Light (with USB)
+                                <b>
+                                    <p style="color:rgb(33, 151, 151)">
+                                        From Rs. 4760
+                                    </p>
+                                </b>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button mat-button style="height:200px;width:170px" class="zoom" routerLink="/productdisplay">
+                                <img
+                                src="../../assets/images/cob.jpeg" style="height:200px;width:150px"></button>
+                                 
+                        </td>
+                        <td>
+                            <p>Wipro Garnet 6W<br> Wall
+                                Light (with USB)
+                                <b>
+                                    <p style="color:rgb(33, 151, 151)">
+                                        From Rs. 4760
+                                    </p>
+                                </b>
+                            </p>
+                        </td>
+                        <td>
+                            <button mat-button style="height:200px;width:170px" class="zoom" routerLink="/productdisplay">
+                                <img
+                                src="../../assets/images/led-downlight_600.jpeg" style="height:200px;width:150px"></button>
+                                 
+                        </td>
+                        <td>
+                            <p>Wipro Garnet 6W<br> Wall
+                                Light (with USB)
+                                <b>
+                                    <p style="color:rgb(33, 151, 151)">
+                                        From Rs. 4760
+                                    </p>
+                                </b>
+                            </p>
+                        </td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+                </mat-tab>
+                <mat-tab label="BEST SELLERS">
+                    <table style="width:600px">
+                        <tbody style="height:300px">
+                            <tr>
+                                <td>
+                                    <button mat-button style="height:200px;width:170px" class="zoom" routerLink="/productdisplay">
+                                        <img
+                                        src="../../assets/images/walllight.jpeg" style="height:200px;width:150px"></button>
+                                         
+                                </td>
+                                <td>
+                                    <p>Wipro Garnet 6W<br> Wall
+                                        Light (with USB)
+                                        <b>
+                                            <p style="color:rgb(33, 151, 151)">
+                                                From Rs. 4760
+                                            </p>
+                                        </b>
+                                    </p>
+                                </td>
+                                <td>
+                                    <button mat-button style="height:200px;width:170px" class="zoom" routerLink="/productdisplay">
+                                        <img
+                                        src="../../assets/images/led strip.jpeg" style="height:200px;width:150px"></button>
+                                         
+                                </td>
+                                <td>
+                                    <p>Wipro Garnet 6W<br> Wall
+                                        Light (with USB)
+                                        <b>
+                                            <p style="color:rgb(33, 151, 151)">
+                                                From Rs. 4760
+                                            </p>
+                                        </b>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button mat-button style="height:200px;width:170px" class="zoom" routerLink="/productdisplay">
+                                        <img
+                                        src="../../assets/images/cob.jpeg" style="height:200px;width:150px"></button>
+                                         
+                                </td>
+                                <td>
+                                    <p>Wipro Garnet 6W<br> Wall
+                                        Light (with USB)
+                                        <b>
+                                            <p style="color:rgb(33, 151, 151)">
+                                                From Rs. 4760
+                                            </p>
+                                        </b>
+                                    </p>
+                                </td>
+                                <td>
+                                    <button mat-button style="height:200px;width:170px" class="zoom" routerLink="/productdisplay">
+                                        <img
+                                        src="../../assets/images/led-downlight_600.jpeg" style="height:200px;width:150px"></button>
+                                         
+                                </td>
+                                <td>
+                                    <p>Wipro Garnet 6W<br> Wall
+                                        Light (with USB)
+                                        <b>
+                                            <p style="color:rgb(33, 151, 151)">
+                                                From Rs. 4760
+                                            </p>
+                                        </b>
+                                    </p>
+                                </td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </mat-tab>
+                <mat-tab label="LOW PRICE">
+                    <table style="width:600px">
+                        <tbody style="height:300px">
+                            <tr>
+                                <td>
+                                    <button mat-button style="height:200px;width:170px" class="zoom" routerLink="/productdisplay">
+                                        <img
+                                        src="../../assets/images/walllight.jpeg" style="height:200px;width:150px"></button>
+                                         
+                                </td>
+                                <td>
+                                    <p>Wipro Garnet 6W<br> Wall
+                                        Light (with USB)
+                                        <b>
+                                            <p style="color:rgb(33, 151, 151)">
+                                                From Rs. 4760
+                                            </p>
+                                        </b>
+                                    </p>
+                                </td>
+                                <td>
+                                    <button mat-button style="height:200px;width:170px" class="zoom" routerLink="/productdisplay">
+                                        <img
+                                        src="../../assets/images/led strip.jpeg" style="height:200px;width:150px"></button>
+                                         
+                                </td>
+                                <td>
+                                    <p>Wipro Garnet 6W<br> Wall
+                                        Light (with USB)
+                                        <b>
+                                            <p style="color:rgb(33, 151, 151)">
+                                                From Rs. 4760
+                                            </p>
+                                        </b>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button mat-button style="height:200px;width:170px" class="zoom" routerLink="/productdisplay">
+                                        <img
+                                        src="../../assets/images/cob.jpeg" style="height:200px;width:150px"></button>
+                                         
+                                </td>
+                                <td>
+                                    <p>Wipro Garnet 6W<br> Wall
+                                        Light (with USB)
+                                        <b>
+                                            <p style="color:rgb(33, 151, 151)">
+                                                From Rs. 4760
+                                            </p>
+                                        </b>
+                                    </p>
+                                </td>
+                                <td>
+                                    <button mat-button style="height:200px;width:170px" class="zoom" routerLink="/productdisplay">
+                                        <img
+                                        src="../../assets/images/led-downlight_600.jpeg" style="height:200px;width:150px"></button>
+                                         
+                                </td>
+                                <td>
+                                    <p>Wipro Garnet 6W<br> Wall
+                                        Light (with USB)
+                                        <b>
+                                            <p style="color:rgb(33, 151, 151)">
+                                                From Rs. 4760
+                                            </p>
+                                        </b>
+                                    </p>
+                                </td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </mat-tab>
+                <mat-tab label="HIGH PRICE"><table style="width:600px">
+                    <tbody style="height:300px">
+                        <tr>
+                            <td>
+                                <button mat-button style="height:200px;width:170px" class="zoom" routerLink="/productdisplay">
+                                    <img
+                                    src="../../assets/images/walllight.jpeg" style="height:200px;width:150px"></button>
+                                     
+                            </td>
+                            <td>
+                                <p>Wipro Garnet 6W<br> Wall
+                                    Light (with USB)
+                                    <b>
+                                        <p style="color:rgb(33, 151, 151)">
+                                            From Rs. 4760
+                                        </p>
+                                    </b>
+                                </p>
+                            </td>
+                            <td>
+                                <button mat-button style="height:200px;width:170px" class="zoom" routerLink="/productdisplay">
+                                    <img
+                                    src="../../assets/images/led strip.jpeg" style="height:200px;width:150px"></button>
+                                     
+                            </td>
+                            <td>
+                                <p>Wipro Garnet 6W<br> Wall
+                                    Light (with USB)
+                                    <b>
+                                        <p style="color:rgb(33, 151, 151)">
+                                            From Rs. 4760
+                                        </p>
+                                    </b>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button mat-button style="height:200px;width:170px" class="zoom" routerLink="/productdisplay">
+                                    <img
+                                    src="../../assets/images/cob.jpeg" style="height:200px;width:150px"></button>
+                                     
+                            </td>
+                            <td>
+                                <p>Wipro Garnet 6W<br> Wall
+                                    Light (with USB)
+                                    <b>
+                                        <p style="color:rgb(33, 151, 151)">
+                                            From Rs. 4760
+                                        </p>
+                                    </b>
+                                </p>
+                            </td>
+                            <td>
+                                <button mat-button style="height:200px;width:170px" class="zoom" routerLink="/productdisplay">
+                                    <img
+                                    src="../../assets/images/led-downlight_600.jpeg" style="height:200px;width:150px"></button>
+                                     
+                            </td>
+                            <td>
+                                <p>Wipro Garnet 6W<br> Wall
+                                    Light (with USB)
+                                    <b>
+                                        <p style="color:rgb(33, 151, 151)">
+                                            From Rs. 4760
+                                        </p>
+                                    </b>
+                                </p>
+                            </td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </mat-tab>
+            
+              </mat-tab-group>
+            </div>
+            
+                    </mat-grid-tile>
+    </mat-grid-list>
+</div>
+
+
+
+
+<div style="width:90%;margin-left:20px;margin-top:100px">
+  
+    <mat-grid-list cols="4" rowHeight="200px">
+        <mat-grid-tile [colspan]="1" [rowspan]="2">
+            <div>
+                <button mat-button style="color:cyan;width:300px;font-size:25px">Cables & Wires</button>
+                <button mat-button style="color:gray;width:300px;font-size:18px">House Wires (1mm-6mm)</button>
+                <button mat-button style="color:gray;width:300px;font-size:18px">Flexible Wires</button>
+                <button mat-button style="color:gray;width:300px;font-size:18px">Multicore Cables and Wires</button>
+                <button mat-button style="color:gray;width:300px;font-size:18px">Coaxial Cables</button>
+                <button mat-button style="color:gray;width:300px;font-size:18px">Networking Cables &
+                    Accessories</button>
+                <button mat-button style="color:gray;width:300px;font-size:18px">Telephone Cables & Accessories</button>
+                <button mat-button style="color:gray;width:300px;font-size:18px">Camera Wires</button>
+            </div>
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="1" [rowspan]="2">
+            <img src="../../assets/images/cable wires.jpeg" style="width:100%;height:400px">
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="2" [rowspan]="2">
+            <div>
+            <mat-tab-group style="margin-left:50px;margin-top:30px">
+                <mat-tab label="LATEST">
+            <table style="width:600px">
+                <tbody style="height:300px">
+                    <tr>
+                        <td>
+                            <button mat-button style="height:200px;width:170px" class="zoom">
+                                <img
+                                src="../../assets/images/walllight.jpeg" style="height:200px;width:150px"></button>
+                                 
+                        </td>
+                        <td>
+                            <p>Wipro Garnet 6W<br> Wall
+                                Light (with USB)
+                                <b>
+                                    <p style="color:rgb(33, 151, 151)">
+                                        From Rs. 4760
+                                    </p>
+                                </b>
+                            </p>
+                        </td>
+                        <td>
+                            <button mat-button style="height:200px;width:170px" class="zoom">
+                                <img
+                                src="../../assets/images/led strip.jpeg" style="height:200px;width:150px"></button>
+                                 
+                        </td>
+                        <td>
+                            <p>Wipro Garnet 6W<br> Wall
+                                Light (with USB)
+                                <b>
+                                    <p style="color:rgb(33, 151, 151)">
+                                        From Rs. 4760
+                                    </p>
+                                </b>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button mat-button style="height:200px;width:170px" class="zoom">
+                                <img
+                                src="../../assets/images/cob.jpeg" style="height:200px;width:150px"></button>
+                                 
+                        </td>
+                        <td>
+                            <p>Wipro Garnet 6W<br> Wall
+                                Light (with USB)
+                                <b>
+                                    <p style="color:rgb(33, 151, 151)">
+                                        From Rs. 4760
+                                    </p>
+                                </b>
+                            </p>
+                        </td>
+                        <td>
+                            <button mat-button style="height:200px;width:170px" class="zoom">
+                                <img
+                                src="../../assets/images/led-downlight_600.jpeg" style="height:200px;width:150px"></button>
+                                 
+                        </td>
+                        <td>
+                            <p>Wipro Garnet 6W<br> Wall
+                                Light (with USB)
+                                <b>
+                                    <p style="color:rgb(33, 151, 151)">
+                                        From Rs. 4760
+                                    </p>
+                                </b>
+                            </p>
+                        </td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+                </mat-tab>
+                <mat-tab label="BEST SELLERS">
+                    <table style="width:600px">
+                        <tbody style="height:300px">
+                            <tr>
+                                <td>
+                                    <button mat-button style="height:200px;width:170px" class="zoom">
+                                        <img
+                                        src="../../assets/images/walllight.jpeg" style="height:200px;width:150px"></button>
+                                         
+                                </td>
+                                <td>
+                                    <p>Wipro Garnet 6W<br> Wall
+                                        Light (with USB)
+                                        <b>
+                                            <p style="color:rgb(33, 151, 151)">
+                                                From Rs. 4760
+                                            </p>
+                                        </b>
+                                    </p>
+                                </td>
+                                <td>
+                                    <button mat-button style="height:200px;width:170px" class="zoom">
+                                        <img
+                                        src="../../assets/images/led strip.jpeg" style="height:200px;width:150px"></button>
+                                         
+                                </td>
+                                <td>
+                                    <p>Wipro Garnet 6W<br> Wall
+                                        Light (with USB)
+                                        <b>
+                                            <p style="color:rgb(33, 151, 151)">
+                                                From Rs. 4760
+                                            </p>
+                                        </b>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button mat-button style="height:200px;width:170px" class="zoom">
+                                        <img
+                                        src="../../assets/images/cob.jpeg" style="height:200px;width:150px"></button>
+                                         
+                                </td>
+                                <td>
+                                    <p>Wipro Garnet 6W<br> Wall
+                                        Light (with USB)
+                                        <b>
+                                            <p style="color:rgb(33, 151, 151)">
+                                                From Rs. 4760
+                                            </p>
+                                        </b>
+                                    </p>
+                                </td>
+                                <td>
+                                    <button mat-button style="height:200px;width:170px" class="zoom">
+                                        <img
+                                        src="../../assets/images/led-downlight_600.jpeg" style="height:200px;width:150px"></button>
+                                         
+                                </td>
+                                <td>
+                                    <p>Wipro Garnet 6W<br> Wall
+                                        Light (with USB)
+                                        <b>
+                                            <p style="color:rgb(33, 151, 151)">
+                                                From Rs. 4760
+                                            </p>
+                                        </b>
+                                    </p>
+                                </td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </mat-tab>
+                <mat-tab label="LOW PRICE">
+                    <table style="width:600px">
+                        <tbody style="height:300px">
+                            <tr>
+                                <td>
+                                    <button mat-button style="height:200px;width:170px" class="zoom">
+                                        <img
+                                        src="../../assets/images/walllight.jpeg" style="height:200px;width:150px"></button>
+                                         
+                                </td>
+                                <td>
+                                    <p>Wipro Garnet 6W<br> Wall
+                                        Light (with USB)
+                                        <b>
+                                            <p style="color:rgb(33, 151, 151)">
+                                                From Rs. 4760
+                                            </p>
+                                        </b>
+                                    </p>
+                                </td>
+                                <td>
+                                    <button mat-button style="height:200px;width:170px" class="zoom">
+                                        <img
+                                        src="../../assets/images/led strip.jpeg" style="height:200px;width:150px"></button>
+                                         
+                                </td>
+                                <td>
+                                    <p>Wipro Garnet 6W<br> Wall
+                                        Light (with USB)
+                                        <b>
+                                            <p style="color:rgb(33, 151, 151)">
+                                                From Rs. 4760
+                                            </p>
+                                        </b>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button mat-button style="height:200px;width:170px" class="zoom">
+                                        <img
+                                        src="../../assets/images/cob.jpeg" style="height:200px;width:150px"></button>
+                                         
+                                </td>
+                                <td>
+                                    <p>Wipro Garnet 6W<br> Wall
+                                        Light (with USB)
+                                        <b>
+                                            <p style="color:rgb(33, 151, 151)">
+                                                From Rs. 4760
+                                            </p>
+                                        </b>
+                                    </p>
+                                </td>
+                                <td>
+                                    <button mat-button style="height:200px;width:170px" class="zoom">
+                                        <img
+                                        src="../../assets/images/led-downlight_600.jpeg" style="height:200px;width:150px"></button>
+                                         
+                                </td>
+                                <td>
+                                    <p>Wipro Garnet 6W<br> Wall
+                                        Light (with USB)
+                                        <b>
+                                            <p style="color:rgb(33, 151, 151)">
+                                                From Rs. 4760
+                                            </p>
+                                        </b>
+                                    </p>
+                                </td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </mat-tab>
+                <mat-tab label="HIGH PRICE"><table style="width:600px">
+                    <tbody style="height:300px">
+                        <tr>
+                            <td>
+                                <button mat-button style="height:200px;width:170px" class="zoom">
+                                    <img
+                                    src="../../assets/images/walllight.jpeg" style="height:200px;width:150px"></button>
+                                     
+                            </td>
+                            <td>
+                                <p>Wipro Garnet 6W<br> Wall
+                                    Light (with USB)
+                                    <b>
+                                        <p style="color:rgb(33, 151, 151)">
+                                            From Rs. 4760
+                                        </p>
+                                    </b>
+                                </p>
+                            </td>
+                            <td>
+                                <button mat-button style="height:200px;width:170px" class="zoom">
+                                    <img
+                                    src="../../assets/images/led strip.jpeg" style="height:200px;width:150px"></button>
+                                     
+                            </td>
+                            <td>
+                                <p>Wipro Garnet 6W<br> Wall
+                                    Light (with USB)
+                                    <b>
+                                        <p style="color:rgb(33, 151, 151)">
+                                            From Rs. 4760
+                                        </p>
+                                    </b>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button mat-button style="height:200px;width:170px" class="zoom">
+                                    <img
+                                    src="../../assets/images/cob.jpeg" style="height:200px;width:150px"></button>
+                                     
+                            </td>
+                            <td>
+                                <p>Wipro Garnet 6W<br> Wall
+                                    Light (with USB)
+                                    <b>
+                                        <p style="color:rgb(33, 151, 151)">
+                                            From Rs. 4760
+                                        </p>
+                                    </b>
+                                </p>
+                            </td>
+                            <td>
+                                <button mat-button style="height:200px;width:170px" class="zoom">
+                                    <img
+                                    src="../../assets/images/led-downlight_600.jpeg" style="height:200px;width:150px"></button>
+                                     
+                            </td>
+                            <td>
+                                <p>Wipro Garnet 6W<br> Wall
+                                    Light (with USB)
+                                    <b>
+                                        <p style="color:rgb(33, 151, 151)">
+                                            From Rs. 4760
+                                        </p>
+                                    </b>
+                                </p>
+                            </td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </mat-tab>
+            
+              </mat-tab-group>
+            </div>
+            
+                    </mat-grid-tile>
+    </mat-grid-list>
+</div>
+
+<div style="width:90%;margin-left:20px;margin-top:70px">
+   
+    <mat-grid-list cols="4" rowHeight="250px">
+        <mat-grid-tile [colspan]="1" [rowspan]="2">
+            <div>
+                <button mat-button style="color:cyan;width:300px;font-size:25px">Fans</button>
+                <button mat-button style="color:gray;width:300px;font-size:18px">Ceiling Fans</button>
+                <button mat-button style="color:gray;width:300px;font-size:18px">Designer Lifestyle Fans</button>
+                <button mat-button style="color:gray;width:300px;font-size:18px">Wall Fans</button>
+                <button mat-button style="color:gray;width:300px;font-size:18px">Table Fans & Personal Fans</button>
+                <button mat-button style="color:gray;width:300px;font-size:18px">Exhaust Fans</button>
+                <button mat-button style="color:gray;width:300px;font-size:18px">Pedestal Fans</button>
+                <button mat-button style="color:gray;width:300px;font-size:18px">Tower Fans</button>
+                <button mat-button style="color:gray;width:300px;font-size:18px">BLDC Fans</button>
+
+            </div>
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="1" [rowspan]="2">
+            <img src="../../assets/images/fans.jpeg" style="width:100%;height:400px">
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="2" [rowspan]="2">
+            <div>
+            <mat-tab-group style="margin-left:50px;margin-top:30px">
+                <mat-tab label="LATEST">
+            <table style="width:600px">
+                <tbody style="height:300px">
+                    <tr>
+                        <td>
+                            <button mat-button style="height:200px;width:170px" class="zoom">
+                                <img
+                                src="../../assets/images/walllight.jpeg" style="height:200px;width:150px"></button>
+                                 
+                        </td>
+                        <td>
+                            <p>Wipro Garnet 6W<br> Wall
+                                Light (with USB)
+                                <b>
+                                    <p style="color:rgb(33, 151, 151)">
+                                        From Rs. 4760
+                                    </p>
+                                </b>
+                            </p>
+                        </td>
+                        <td>
+                            <button mat-button style="height:200px;width:170px" class="zoom">
+                                <img
+                                src="../../assets/images/led strip.jpeg" style="height:200px;width:150px"></button>
+                                 
+                        </td>
+                        <td>
+                            <p>Wipro Garnet 6W<br> Wall
+                                Light (with USB)
+                                <b>
+                                    <p style="color:rgb(33, 151, 151)">
+                                        From Rs. 4760
+                                    </p>
+                                </b>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button mat-button style="height:200px;width:170px" class="zoom">
+                                <img
+                                src="../../assets/images/cob.jpeg" style="height:200px;width:150px"></button>
+                                 
+                        </td>
+                        <td>
+                            <p>Wipro Garnet 6W<br> Wall
+                                Light (with USB)
+                                <b>
+                                    <p style="color:rgb(33, 151, 151)">
+                                        From Rs. 4760
+                                    </p>
+                                </b>
+                            </p>
+                        </td>
+                        <td>
+                            <button mat-button style="height:200px;width:170px" class="zoom">
+                                <img
+                                src="../../assets/images/led-downlight_600.jpeg" style="height:200px;width:150px"></button>
+                                 
+                        </td>
+                        <td>
+                            <p>Wipro Garnet 6W<br> Wall
+                                Light (with USB)
+                                <b>
+                                    <p style="color:rgb(33, 151, 151)">
+                                        From Rs. 4760
+                                    </p>
+                                </b>
+                            </p>
+                        </td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+                </mat-tab>
+                <mat-tab label="BEST SELLERS">
+                    <table style="width:600px">
+                        <tbody style="height:300px">
+                            <tr>
+                                <td>
+                                    <button mat-button style="height:200px;width:170px" class="zoom">
+                                        <img
+                                        src="../../assets/images/walllight.jpeg" style="height:200px;width:150px"></button>
+                                         
+                                </td>
+                                <td>
+                                    <p>Wipro Garnet 6W<br> Wall
+                                        Light (with USB)
+                                        <b>
+                                            <p style="color:rgb(33, 151, 151)">
+                                                From Rs. 4760
+                                            </p>
+                                        </b>
+                                    </p>
+                                </td>
+                                <td>
+                                    <button mat-button style="height:200px;width:170px" class="zoom">
+                                        <img
+                                        src="../../assets/images/led strip.jpeg" style="height:200px;width:150px"></button>
+                                         
+                                </td>
+                                <td>
+                                    <p>Wipro Garnet 6W<br> Wall
+                                        Light (with USB)
+                                        <b>
+                                            <p style="color:rgb(33, 151, 151)">
+                                                From Rs. 4760
+                                            </p>
+                                        </b>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button mat-button style="height:200px;width:170px" class="zoom">
+                                        <img
+                                        src="../../assets/images/cob.jpeg" style="height:200px;width:150px"></button>
+                                         
+                                </td>
+                                <td>
+                                    <p>Wipro Garnet 6W<br> Wall
+                                        Light (with USB)
+                                        <b>
+                                            <p style="color:rgb(33, 151, 151)">
+                                                From Rs. 4760
+                                            </p>
+                                        </b>
+                                    </p>
+                                </td>
+                                <td>
+                                    <button mat-button style="height:200px;width:170px" class="zoom">
+                                        <img
+                                        src="../../assets/images/led-downlight_600.jpeg" style="height:200px;width:150px"></button>
+                                         
+                                </td>
+                                <td>
+                                    <p>Wipro Garnet 6W<br> Wall
+                                        Light (with USB)
+                                        <b>
+                                            <p style="color:rgb(33, 151, 151)">
+                                                From Rs. 4760
+                                            </p>
+                                        </b>
+                                    </p>
+                                </td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </mat-tab>
+                <mat-tab label="LOW PRICE">
+                    <table style="width:600px">
+                        <tbody style="height:300px">
+                            <tr>
+                                <td>
+                                    <button mat-button style="height:200px;width:170px" class="zoom">
+                                        <img
+                                        src="../../assets/images/walllight.jpeg" style="height:200px;width:150px"></button>
+                                         
+                                </td>
+                                <td>
+                                    <p>Wipro Garnet 6W<br> Wall
+                                        Light (with USB)
+                                        <b>
+                                            <p style="color:rgb(33, 151, 151)">
+                                                From Rs. 4760
+                                            </p>
+                                        </b>
+                                    </p>
+                                </td>
+                                <td>
+                                    <button mat-button style="height:200px;width:170px" class="zoom">
+                                        <img
+                                        src="../../assets/images/led strip.jpeg" style="height:200px;width:150px"></button>
+                                         
+                                </td>
+                                <td>
+                                    <p>Wipro Garnet 6W<br> Wall
+                                        Light (with USB)
+                                        <b>
+                                            <p style="color:rgb(33, 151, 151)">
+                                                From Rs. 4760
+                                            </p>
+                                        </b>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button mat-button style="height:200px;width:170px" class="zoom">
+                                        <img
+                                        src="../../assets/images/cob.jpeg" style="height:200px;width:150px"></button>
+                                         
+                                </td>
+                                <td>
+                                    <p>Wipro Garnet 6W<br> Wall
+                                        Light (with USB)
+                                        <b>
+                                            <p style="color:rgb(33, 151, 151)">
+                                                From Rs. 4760
+                                            </p>
+                                        </b>
+                                    </p>
+                                </td>
+                                <td>
+                                    <button mat-button style="height:200px;width:170px" class="zoom">
+                                        <img
+                                        src="../../assets/images/led-downlight_600.jpeg" style="height:200px;width:150px"></button>
+                                         
+                                </td>
+                                <td>
+                                    <p>Wipro Garnet 6W<br> Wall
+                                        Light (with USB)
+                                        <b>
+                                            <p style="color:rgb(33, 151, 151)">
+                                                From Rs. 4760
+                                            </p>
+                                        </b>
+                                    </p>
+                                </td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </mat-tab>
+                <mat-tab label="HIGH PRICE"><table style="width:600px">
+                    <tbody style="height:300px">
+                        <tr>
+                            <td>
+                                <button mat-button style="height:200px;width:170px" class="zoom">
+                                    <img
+                                    src="../../assets/images/walllight.jpeg" style="height:200px;width:150px"></button>
+                                     
+                            </td>
+                            <td>
+                                <p>Wipro Garnet 6W<br> Wall
+                                    Light (with USB)
+                                    <b>
+                                        <p style="color:rgb(33, 151, 151)">
+                                            From Rs. 4760
+                                        </p>
+                                    </b>
+                                </p>
+                            </td>
+                            <td>
+                                <button mat-button style="height:200px;width:170px" class="zoom">
+                                    <img
+                                    src="../../assets/images/led strip.jpeg" style="height:200px;width:150px"></button>
+                                     
+                            </td>
+                            <td>
+                                <p>Wipro Garnet 6W<br> Wall
+                                    Light (with USB)
+                                    <b>
+                                        <p style="color:rgb(33, 151, 151)">
+                                            From Rs. 4760
+                                        </p>
+                                    </b>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button mat-button style="height:200px;width:170px" class="zoom">
+                                    <img
+                                    src="../../assets/images/cob.jpeg" style="height:200px;width:150px"></button>
+                                     
+                            </td>
+                            <td>
+                                <p>Wipro Garnet 6W<br> Wall
+                                    Light (with USB)
+                                    <b>
+                                        <p style="color:rgb(33, 151, 151)">
+                                            From Rs. 4760
+                                        </p>
+                                    </b>
+                                </p>
+                            </td>
+                            <td>
+                                <button mat-button style="height:200px;width:170px" class="zoom">
+                                    <img
+                                    src="../../assets/images/led-downlight_600.jpeg" style="height:200px;width:150px"></button>
+                                     
+                            </td>
+                            <td>
+                                <p>Wipro Garnet 6W<br> Wall
+                                    Light (with USB)
+                                    <b>
+                                        <p style="color:rgb(33, 151, 151)">
+                                            From Rs. 4760
+                                        </p>
+                                    </b>
+                                </p>
+                            </td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </mat-tab>
+            
+              </mat-tab-group>
+            </div>
+            
+                    </mat-grid-tile>
+    </mat-grid-list>
+</div>
+
+<div style="width:90%;margin-left:20px;margin-top:100px">
+
+
+    <mat-grid-list cols="4" rowHeight="200px">
+        <mat-grid-tile [colspan]="1" [rowspan]="2">
+            <div>
+                <button mat-button style="color:cyan;width:300px;font-size:25px">Fans</button>
+                <button mat-button style="color:gray;width:300px;font-size:18px">Ceiling Fans</button>
+                <button mat-button style="color:gray;width:300px;font-size:18px">Designer Lifestyle Fans</button>
+                <button mat-button style="color:gray;width:300px;font-size:18px">Wall Fans</button>
+                <button mat-button style="color:gray;width:300px;font-size:18px">Table Fans & Personal Fans</button>
+                <button mat-button style="color:gray;width:300px;font-size:18px">Exhaust Fans</button>
+                <button mat-button style="color:gray;width:300px;font-size:18px">Pedestal Fans</button>
+                <button mat-button style="color:gray;width:300px;font-size:18px">Tower Fans</button>
+                <button mat-button style="color:gray;width:300px;font-size:18px">BLDC Fans</button>
+
+            </div>
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="1" [rowspan]="2">
+            <img src="../../assets/images/fans.jpeg" style="width:100%;height:400px">
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="2" [rowspan]="2">
+<div>
+<mat-tab-group style="margin-left:150px;margin-top:30px">
+    <mat-tab label="LATEST">
+<table style="width:600px">
+    <tbody style="height:300px">
+        <tr>
+            <td>
+                <button mat-button style="height:200px;width:170px" class="zoom">
+                    <img
+                    src="../../assets/images/walllight.jpeg" style="height:200px;width:150px"></button>
+                     
+            </td>
+            <td>
+                <p>Wipro Garnet 6W<br> Wall
+                    Light (with USB)
+                    <b>
+                        <p style="color:rgb(33, 151, 151)">
+                            From Rs. 4760
+                        </p>
+                    </b>
+                </p>
+            </td>
+            <td>
+                <button mat-button style="height:200px;width:170px" class="zoom">
+                    <img
+                    src="../../assets/images/led strip.jpeg" style="height:200px;width:150px"></button>
+                     
+            </td>
+            <td>
+                <p>Wipro Garnet 6W<br> Wall
+                    Light (with USB)
+                    <b>
+                        <p style="color:rgb(33, 151, 151)">
+                            From Rs. 4760
+                        </p>
+                    </b>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button mat-button style="height:200px;width:170px" class="zoom">
+                    <img
+                    src="../../assets/images/cob.jpeg" style="height:200px;width:150px"></button>
+                     
+            </td>
+            <td>
+                <p>Wipro Garnet 6W<br> Wall
+                    Light (with USB)
+                    <b>
+                        <p style="color:rgb(33, 151, 151)">
+                            From Rs. 4760
+                        </p>
+                    </b>
+                </p>
+            </td>
+            <td>
+                <button mat-button style="height:200px;width:170px" class="zoom">
+                    <img
+                    src="../../assets/images/led-downlight_600.jpeg" style="height:200px;width:150px"></button>
+                     
+            </td>
+            <td>
+                <p>Wipro Garnet 6W<br> Wall
+                    Light (with USB)
+                    <b>
+                        <p style="color:rgb(33, 151, 151)">
+                            From Rs. 4760
+                        </p>
+                    </b>
+                </p>
+            </td>
+        </tr>
+        
+    </tbody>
+</table>
+
+    </mat-tab>
+    <mat-tab label="BEST SELLERS">
+        <table style="width:600px">
+            <tbody style="height:300px">
+                <tr>
+                    <td>
+                        <button mat-button style="height:200px;width:170px" class="zoom">
+                            <img
+                            src="../../assets/images/walllight.jpeg" style="height:200px;width:150px"></button>
+                             
+                    </td>
+                    <td>
+                        <p>Wipro Garnet 6W<br> Wall
+                            Light (with USB)
+                            <b>
+                                <p style="color:rgb(33, 151, 151)">
+                                    From Rs. 4760
+                                </p>
+                            </b>
+                        </p>
+                    </td>
+                    <td>
+                        <button mat-button style="height:200px;width:170px" class="zoom">
+                            <img
+                            src="../../assets/images/led strip.jpeg" style="height:200px;width:150px"></button>
+                             
+                    </td>
+                    <td>
+                        <p>Wipro Garnet 6W<br> Wall
+                            Light (with USB)
+                            <b>
+                                <p style="color:rgb(33, 151, 151)">
+                                    From Rs. 4760
+                                </p>
+                            </b>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button mat-button style="height:200px;width:170px" class="zoom">
+                            <img
+                            src="../../assets/images/cob.jpeg" style="height:200px;width:150px"></button>
+                             
+                    </td>
+                    <td>
+                        <p>Wipro Garnet 6W<br> Wall
+                            Light (with USB)
+                            <b>
+                                <p style="color:rgb(33, 151, 151)">
+                                    From Rs. 4760
+                                </p>
+                            </b>
+                        </p>
+                    </td>
+                    <td>
+                        <button mat-button style="height:200px;width:170px" class="zoom">
+                            <img
+                            src="../../assets/images/led-downlight_600.jpeg" style="height:200px;width:150px"></button>
+                             
+                    </td>
+                    <td>
+                        <p>Wipro Garnet 6W<br> Wall
+                            Light (with USB)
+                            <b>
+                                <p style="color:rgb(33, 151, 151)">
+                                    From Rs. 4760
+                                </p>
+                            </b>
+                        </p>
+                    </td>
+                </tr>
+                
+            </tbody>
+        </table>
+    </mat-tab>
+    <mat-tab label="LOW PRICE">
+        <table style="width:600px">
+            <tbody style="height:300px">
+                <tr>
+                    <td>
+                        <button mat-button style="height:200px;width:170px" class="zoom">
+                            <img
+                            src="../../assets/images/walllight.jpeg" style="height:200px;width:150px"></button>
+                             
+                    </td>
+                    <td>
+                        <p>Wipro Garnet 6W<br> Wall
+                            Light (with USB)
+                            <b>
+                                <p style="color:rgb(33, 151, 151)">
+                                    From Rs. 4760
+                                </p>
+                            </b>
+                        </p>
+                    </td>
+                    <td>
+                        <button mat-button style="height:200px;width:170px" class="zoom">
+                            <img
+                            src="../../assets/images/led strip.jpeg" style="height:200px;width:150px"></button>
+                             
+                    </td>
+                    <td>
+                        <p>Wipro Garnet 6W<br> Wall
+                            Light (with USB)
+                            <b>
+                                <p style="color:rgb(33, 151, 151)">
+                                    From Rs. 4760
+                                </p>
+                            </b>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button mat-button style="height:200px;width:170px" class="zoom">
+                            <img
+                            src="../../assets/images/cob.jpeg" style="height:200px;width:150px"></button>
+                             
+                    </td>
+                    <td>
+                        <p>Wipro Garnet 6W<br> Wall
+                            Light (with USB)
+                            <b>
+                                <p style="color:rgb(33, 151, 151)">
+                                    From Rs. 4760
+                                </p>
+                            </b>
+                        </p>
+                    </td>
+                    <td>
+                        <button mat-button style="height:200px;width:170px" class="zoom">
+                            
+                            <img
+                            src="../../assets/images/led-downlight_600.jpeg" style="height:200px;width:150px"></button>
+                             
+                    </td>
+                    <td>
+                        <p>Wipro Garnet 6W<br> Wall
+                            Light (with USB)
+                            <b>
+                                <p style="color:rgb(33, 151, 151)">
+                                    From Rs. 4760
+                                </p>
+                            </b>
+                        </p>
+                    </td>
+                </tr>
+                
+            </tbody>
+        </table>
+    </mat-tab>
+    <mat-tab label="HIGH PRICE">
+        <table style="width:900px">
+        <tbody style="height:300px" >
+            <tr>
+               <span *ngFor="let list of productlist|slice:0:4">
+                <td *ngIf="list.category=='Led&lighting'">
+                    <button mat-button style="height:200px;width:170px" (click)="id(list._id,list.productImage)" class="zoom" routerLink="/productdisplay">
+                        <img
+                        src="http://localhost:3000/{{list.productImage}}" style="height:200px;width:150px"></button>
+                       
+                </td>
+            
+                <td *ngIf="list.category=='Led&lighting'">
+                    <p><span style="font-size:12px">{{list.name}}</span>
+                        <b>
+                            <p style="color:rgb(33, 151, 151)">
+                                From Rs. {{list.price}}
+                            </p>
+                        </b>
+                    </p>
+                </td>  
+            </span>
+                </tr>
+            
+        </tbody>
+    </table>
+</mat-tab>
+
+  </mat-tab-group>
+</div>
+
+        </mat-grid-tile>
+
+    </mat-grid-list>
+</div>
+
+
+
+
+
+<mat-grid-list cols="1">
+    <table style="width:900px">
+        <tbody style="height:300px" >
+            <tr>
+               <span *ngFor="let list of productlist|slice:0:4">
+                <td *ngIf="list.products.category=='Led&lighting'">
+                    <button mat-button style="height:200px;width:170px" (click)="id(list.products._id,list.products.productImage)" class="zoom" routerLink="/productdisplay">
+                        <img
+                        src="http://localhost:3000/{{list.products.productImage}}" style="height:200px;width:150px"></button>
+                       
+                </td>
+            
+                <td *ngIf="list.products.category=='Led&lighting'">
+                    <p>{{list.products.name}}
+                        <b>
+                            <p style="color:rgb(33, 151, 151)">
+                                From Rs. {{list.products.price}}
+                            </p>
+                        </b>
+                    </p>
+                </td>  
+            </span>
+                </tr>
+            
+        </tbody>
+    </table>
+ 
+</mat-grid-list>
+
+
+
+
+
+<mat-grid-list cols="1" rowheight="400px">
+
+    <div style="margin-top: 100px;">
+        <h1 style="text-align:center;">Best of Electricals: India’s online electrical shopping store</h1>
+        <p style="margin-left: 100px;margin-right: 100px;text-align: justify;">Bestofelectricals.com is an online
+            ecommerce portal focused on electrical accessories that are used during new home or office or factory
+            construction and renovation. This portal is promoted by a team of experienced technocrats, with excellent IT
+            & electrical domain skills; who already run a successful offline electrical trade distribution and project
+            supplies business - INDERSONS. The CEO of Bestofelectricals.com is an alumnus of BITS, Pilani; who spent
+            many years in IT networking & software in India & UK and then significant years in electrical business
+            operations in India.
+            Consumer Electrical trade sales in India are still managed out of either Wholesale Markets in metros or
+            single branch Family stores spread all across the country. They feed to the requirements of Industries,
+            Transmission Utilities, Govt Bodies, CPWD/PWD, MES, Pvt Institutions, Builder, Architects, Interior
+            Decorators, Electrical Contractors, Electricians and the end user consumer himself.
+
+            Best of Electricals offers top-notch and guaranteed electrical products at cost effective prices in a user
+            friendly way with options of paying through credit card, debit card and net-banking process through safe and
+            trusted payment gateway.
+
+            Launched in 2014, bestofelectricals.com has merged disparate products from leading Indian and MNC brands in
+            a structured format & very competitive prices on its portal. The product range includes Fans, LED lighting,
+            Copper Flexible Wires, Armoured Power Cables, Networking Accessories, Switchgears, MCBs, Distribution
+            Boards, Modular Switches & Wiring Accessories, Electrical Tools, Earthing Items, Geysers, Air Purifiers,
+            Energy meters, etc. At present more than 10,000+ SKUs are carried in the inventory of bestofelectricals.com.
+            Each product listed has clear pictures and description/specifications in easy English. A typical problem
+            that this portal has helped solve is clearing the client need v/s supplier understanding of right product.
+            For example different types of electrical fuses (there are at least 20 different sizes) are listed with
+            their pictures and when a client wants to order a fuse, he can see the exact type that is required and order
+            the correct item. In old days, if he wanted to order a similar fuse on phone without personal visit, it was
+            very difficult to inform his supplier as to what fuse he needs; as the markings on fuse may have washed out
+            over time. So the possibility of wrong item supply was very high; which has now been completely eliminated.
+
+            Some of the top selling electrical brands on this comprehensively established online electrical shop are
+            KEI, Philips, Legrand, ABB, Honeywell-MK, Finolex,Crompton, Usha, Gewiss, Polycab, Secure Meters, AKG,
+            Polypack, Anchor, Hindware-Vents, Legero, Compact, Dlink, AMP, Racold, Gewiss, etc. Browse for top quality
+            electrical products, available on this website, with complete description and pictures to help customers
+            make right buying decision.
+            Since its launch, bestofelectricals.com has got product orders from all across India ranging from Kashmir in
+            North to Tamil Nadu in South; Goa in West to Nagaland in East. And there is a lot of repeat
+            business.Customers stay with us year after year due to our responsiveness, quick delivery, ability to
+            understand their needs, ample inventory and high business ethics.</p>
+    </div>
+
+</mat-grid-list>

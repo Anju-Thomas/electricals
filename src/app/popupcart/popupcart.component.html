@@ -1,0 +1,36 @@
+<div mat-dialog-content style="width: 100%;height:500px;text-align: center;">
+    <div>
+        <mat-grid-list cols="4" rowHeight="100px" *ngFor="let list of cartlist">
+            <mat-grid-tile>
+                <img src="http://localhost:3000/{{list.productImage}}" style="width:100px;height:100px">
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <span >{{list.productId.name}}</span>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <span><b style="color:rgb(12, 94, 12);">Rs. {{list.price}}</b> <br>Quantity: {{list.quantity}}</span>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <mat-icon style="background-color: rgb(233, 231, 231); color: rgb(177, 174, 174);">clear</mat-icon>
+            </mat-grid-tile>
+        </mat-grid-list><br>
+        <mat-grid-list cols="2" rowHeight="60px"  style="background-color: rgb(233, 231, 231);">
+            <mat-grid-tile>
+                <span style="color: grey;"><mat-icon style="color: white;">shopping_cart</mat-icon> 1 item(s)</span>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <span style="color: grey;">Sub-Total: <b style="color:rgb(12, 94, 12);">Rs. {{subtotal}}</b></span>
+            </mat-grid-tile>
+        </mat-grid-list>
+        <mat-grid-list cols="1" rowHeight="50px" style="background-color: rgb(233, 231, 231);">
+            <mat-grid-tile>
+                <button mat-button color="warn" style="background-color:orangered;color: white; width: 100%;">CHECKOUT</button>
+            </mat-grid-tile>
+        </mat-grid-list>
+        <mat-grid-list cols="1" rowHeight="50px" style="background-color: rgb(233, 231, 231);">
+            <mat-grid-tile>
+                <button mat-button  style="background-color:rgb(199, 194, 193);color: rgb(107, 103, 103);width: 100%;" (click)="close()">GO TO CART</button>
+            </mat-grid-tile>
+        </mat-grid-list>
+  </div>
+</div>

@@ -1,0 +1,101 @@
+<div class="container">
+  <ul class="progressbar">
+    <li class="active"></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+</div>
+<mat-grid-list cols="2">
+  <mat-grid-tile>
+
+
+  <table id="cart">
+    <thead>
+      <th>Remove</th>
+      <th>Image</th>
+      <th>Product(s)</th>
+      <th>Price</th>
+      <th>Qty</th>
+      <th>Total</th>
+    </thead>
+    <tr *ngFor="let list of cartlist">
+      <td><mat-icon style="color:rgb(197, 205, 211)">delete</mat-icon></td>
+      <td><img src="http://localhost:3000/{{list.productImage}}" style="width:100px;height:100px"></td>
+      <td>{{list.productId.name}}</td>
+      <td>{{list.price}}</td>
+      <td><button style="margin:20px" (click)="dec(list)">-</button><button id="qty">{{list.quantity}}</button><button style="margin:20px" (click)="inc(list)">+</button><br>
+      <a href="" style="text-decoration:none" routerLink="/cart">Update</a></td>
+      <td>{{list.total}}</td>
+    </tr>
+  </table>
+</mat-grid-tile>
+<mat-grid-tile>
+  <div>
+    <mat-accordion class="example-headers-align" multi>
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Discount Code and Voucher
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <p><b>Discount Code</b></p>
+        <p style="color: grey;">Enter your coupon here</p>
+        <input type="text">
+        <button mat-flat-button style="color: grey; background-color: rgb(238, 236, 236);">Apply</button>
+      </mat-expansion-panel>
+      <mat-expansion-panel> 
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Estimate Shipping
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <p style="color: grey;">Enter your destination to get a shipping estimate</p>
+        <mat-form-field>
+           <mat-label>Select Country</mat-label> 
+          <mat-select>
+            <mat-option>Select Country</mat-option>
+            <mat-option value="india">INDIA</mat-option>
+          </mat-select>
+        </mat-form-field>
+        <br>
+        <mat-form-field>
+          <mat-label>Select State</mat-label>
+          <mat-select>
+            <mat-option>Select State</mat-option>
+          </mat-select>
+        </mat-form-field><br>
+        <mat-form-field>
+          <mat-label>Pincode</mat-label>
+          <input matInput>
+        </mat-form-field><br>
+        <button mat-flat-button style="color: grey; background-color: rgb(238, 236, 236);">ESTIMATE SHIPPING</button>
+      </mat-expansion-panel>
+    </mat-accordion>
+    <div style="margin-top:20px;background-color:rgb(245, 239, 239);height:300px">
+      <table style="width:400px;height:250px;margin-left:30px;margin-right:30px">
+           
+        <tbody>
+            <tr>
+                <td style="text-align: left;">Sub-Total:</td>
+                <td style="text-align: right;">Rs. {{subtotal}}</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;">Shipping:</td>
+                <td style="text-align: right;">Calculated during checkout</td>
+            </tr>
+            <tr>
+                <td style="color:rgb(66, 158, 158);font-size:20px;text-align: left;"><b>Total:</b></td>
+                <td  style="color:rgb(66, 158, 158);font-size:20px;text-align: right;"><b>Calculated during checkout</b></td>
+            </tr>
+             
+        </tbody>
+    </table>
+    <div style="text-align: center;">
+      <button mat-button style="color:white;background-color:orange;width:350px" routerLink="/orders"><b>CHECKOUT</b></button>
+    </div>
+    </div>
+
+  </div>
+</mat-grid-tile>
+</mat-grid-list>

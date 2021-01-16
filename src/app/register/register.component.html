@@ -1,0 +1,79 @@
+<form #registerform="ngForm" class="form-group">
+<mat-grid-list cols="2" rowHeight="500px">
+  <h1 style="text-align: center;">REGISTER</h1>
+  
+  <mat-grid-tile>
+    <div>
+      <h4><b>Your Personal Details</b></h4>
+      <p>
+        <mat-form-field appearance="legacy">
+          <input matInput placeholder="First Name:" class="form-control" #fn="ngModel" [(ngModel)]="firstname" name="firstname">
+          <mat-icon matSuffix color="warn">*</mat-icon>
+        </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field appearance="legacy">
+          <input matInput placeholder="Last Name:" class="form-control" #ln="ngModel" [(ngModel)]="lastname" name="lastname">
+          <mat-icon matSuffix color="warn">*</mat-icon>
+        </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field appearance="legacy">
+          <input matInput placeholder="E-Mail" class="form-control" #em="ngModel" [(ngModel)]="email" name="email">
+          <mat-icon matSuffix color="warn">*</mat-icon>
+        </mat-form-field>
+      </p>
+      <h4><b>Your Contact Information</b></h4>
+      <p>
+        <mat-form-field appearance="legacy">
+          <input matInput placeholder="Mobile No:" class="form-control" #mob="ngModel" [(ngModel)]="mobile" name="mobile">
+          <mat-icon matSuffix color="warn">*</mat-icon>
+        </mat-form-field>
+      </p>
+    </div>
+
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <div style="height:375px">
+      <h4><b>Your Password</b></h4>
+      <p>
+        <mat-form-field appearance="legacy">
+          <input matInput placeholder="Password:" type="password" class="form-control" #pass="ngModel" [(ngModel)]="password" name="password">
+          <mat-icon matSuffix color="warn">*</mat-icon>
+        </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field appearance="legacy">
+          <input matInput placeholder="Confirm Password:" type="password" class="form-control" #conf="ngModel" [(ngModel)]="confirm" name="confirm">
+          <mat-icon matSuffix color="warn">*</mat-icon>
+        </mat-form-field>
+      </p>
+      <div style="width:250px;height:70px;background-color:rgb(238, 230, 230);margin-top:20px">
+        <input type="checkbox" style="width:20px;height:20px;">
+        <mat-label>I'm not a robot</mat-label>
+        
+        <img src="../../assets/images/download.png" style="height:40px;width:40px;margin-left:60px;margin-top:5px">
+      <p style="font-size:10px;margin-left:170px;"><a href="">Privacy</a>-<a href="">Terms</a></p>
+      </div>
+     
+
+    </div>
+
+  </mat-grid-tile>
+</mat-grid-list>
+<mat-grid-list cols="1" style="text-align:center" rowHeight="50px">
+  <button mat-button style="width:500px;background-color:rgb(241, 114, 10);color:white" (click)=register()>REGISTER</button>
+</mat-grid-list>
+<mat-grid-list cols="1" rowHeight="50px" style="text-align:center">
+
+  <p style="color:gray;"><b>Quick Login Gateway</b></p>
+
+</mat-grid-list>
+
+<mat-grid-list cols="1" style="text-align:center" rowHeight="50px">
+  <button mat-button style="width:200px;background-color:rgb(226, 62, 62);color:white" (click)=navigategoogle()>LOGIN WITH GOOGLE</button>
+  <button mat-button style="margin-left:100px;width:200px;background-color:rgb(71, 71, 195);color:white" (click)=navigatefb()>LOGIN WITH
+    FACEBOOK</button>
+
+</mat-grid-list>
+</form>
